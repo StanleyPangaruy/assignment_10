@@ -25,7 +25,7 @@ while True:
         #variable for time with specific format
         dt = now.strftime("%m/%d/%Y %I:%M:%S %p PHT")
 
-        #decoded data from the qr code was stored in here
+        #decoded data from the qr code was stored in this variable
         myData = qrcode.data.decode()
 
         #for creation, writing and appending in the text file
@@ -39,7 +39,7 @@ while True:
     cv2.imshow('Contact Tracing App', img)
     cv2.waitKey(1)
 
-    #if the the count reaches 1 the loop is end
+    #if the the count reaches 1 the loop will end
     if count == 1:
         break
 
